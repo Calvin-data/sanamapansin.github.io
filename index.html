@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shannon Dump</title>
+        <link rel="stylesheet" href="shannon.css">
+    </head>
+    <body>
+        <div class="box">
+            <span style="--i:1;"><img src="Shannon/1.jpg" alt=""></span>
+            <span style="--i:2;"><img src="Shannon/2.jpg" alt=""></span>
+            <span style="--i:3;"><img src="Shannon/3.jpg" alt=""></span>
+            <span style="--i:4;"><img src="Shannon/4.jpg" alt=""></span>
+            <span style="--i:5;"><img src="Shannon/5.jpg" alt=""></span>
+            <span style="--i:6;"><img src="Shannon/6.jpg" alt=""></span>
+            <span style="--i:7;"><img src="Shannon/7.jpg" alt=""></span>
+            <span style="--i:8;"><img src="Shannon/8.jpg" alt=""></span>
+        </div>
+
+        <script type="text/javascript">
+            let box = document.querySelector('.box');
+            window.onmousemove = function(e){
+                let x = e.clientX/3;
+                box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+            }
+        </script>
+    </body>
+</html>
